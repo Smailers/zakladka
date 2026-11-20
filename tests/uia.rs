@@ -261,7 +261,16 @@ fn ocr_reads_rendered_line() {
         texts,
         latin_texts
     );
-    assert!(texts.iter().any(|t| t.contains("Проверка")), "нет «Проверка»: {texts:?}");
+    let russian = windows::Globalization::Language::CreateLanguage(&windows::core::HSTRING::from("ru"))
+        .and_then(|language| OcrEngine::IsLanguageSupported(&language))
+        .unwrap_or(false);
+    if russian {
+        assert!(texts.iter().any(|t| t.contains("Проверка")), "нет «Проверка»: {texts:?}");
+    } else {
+        // Русского языка OCR нет (так на серверах сборки GitHub): кириллица не распознаётся.
+        println!("русского языка OCR нет — проверяются только латиница и цифры");
+    }
+    assert!(texts.iter().any(|t| t.contains("123")), "нет «123»: {texts:?}");
     assert_eq!(words.len(), again.len(), "повтор на том же движке");
     for word in &words {
         let r = word.rect;
