@@ -355,11 +355,31 @@ impl Drop for Panel {
 
 /// Действие: окно уничтожить, потом (без заимствования состояния) вызвать `on_action`.
 fn finish(inner: &Rc<RefCell<Inner>>, action: PanelAction) {
-    let (hwnd, callback) = match inner.try_borrow_mut() {
-        Ok(mut i) => (i.take_window(), i.on_action.take()),
+    let hwnd = match inner.try_borrow_mut() {
+        Ok(mut i) => i.take_window(),
         Err(_) => return,
     };
     destroy(hwnd);
+    call(inner, action);
+}
+
+/// Действие, после которого панель остаётся открытой (`keeps_panel`): окно живо, пояснение
+/// убирается (строка под указателем могла смениться), обработчик вызывается так же.
+fn notify(inner: &Rc<RefCell<Inner>>, action: PanelAction) {
+    Tip::hide(0);
+    if let Ok(mut i) = inner.try_borrow_mut() {
+        i.tip_target = None;
+        i.invalidate();
+    }
+    call(inner, action);
+}
+
+/// `on_action` без заимствования состояния.
+fn call(inner: &Rc<RefCell<Inner>>, action: PanelAction) {
+    let callback = match inner.try_borrow_mut() {
+        Ok(mut i) => i.on_action.take(),
+        Err(_) => return,
+    };
     if let Some(mut callback) = callback {
         // Паника в обработчике не должна терять его: место паники пишет panic hook.
         let _ = catch_unwind(AssertUnwindSafe(|| callback(action)));
@@ -666,7 +686,11 @@ fn panel_proc(hwnd: Hwnd, msg: u32, wparam: usize, lparam: isize) -> Option<isiz
         state.handle(hwnd, msg, wparam, lparam)
     };
     if let Some(action) = action {
-        finish(&inner, action);
+        if action.keeps_panel() {
+            notify(&inner, action);
+        } else {
+            finish(&inner, action);
+        }
     }
     result
 }

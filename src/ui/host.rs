@@ -633,10 +633,23 @@ impl Host {
         }
     }
 
-    /// Панель уже закрыта (все действия её закрывают). Метки были спрятаны при открытии — после
-    /// любого действия `Rerender` (в Python их возвращал сам следующий тик, в Rust кэш `Overlay`
-    /// о прятании не знает).
+    /// Удаление, «Вернуть» и переключатели оставляют панель открытой (`keeps_panel`): список
+    /// обновит `refresh_panel`, метки остаются спрятанными до её закрытия. Остальные действия панель
+    /// уже закрыли; метки были спрятаны при открытии — после них `Rerender` (в Python их возвращал
+    /// сам следующий тик, в Rust кэш `Overlay` о прятании не знает).
     fn on_panel_action(&mut self, action: PanelAction) {
+        let open = self.panel.as_ref().is_some_and(|p| p.is_open());
+        if action.keeps_panel() && open {
+            match action {
+                PanelAction::Delete(id) => self.send(Command::Delete(id)),
+                PanelAction::Undo => self.send(Command::Undo),
+                PanelAction::DeleteAll => self.send(Command::DeleteAll),
+                PanelAction::ToggleMarks => self.toggle_marks(),
+                PanelAction::ToggleHints => self.toggle_hints(),
+                _ => {}
+            }
+            return;
+        }
         self.stop_status_timer();
         match action {
             PanelAction::Go(id) => {
@@ -694,7 +707,8 @@ impl Host {
         self.send(Command::Pause(self.paused));
         if self.paused {
             self.hide_marks();
-        } else {
+        } else if !self.panel.as_ref().is_some_and(|p| p.is_open()) {
+            // При открытой панели метки спрятаны; вернёт их её закрытие.
             self.send(Command::Rerender);
         }
         self.update_watch();

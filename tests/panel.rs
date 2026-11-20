@@ -277,7 +277,7 @@ fn test_click_row_goes_and_cross_deletes() {
     f.open(rows, state());
     f.click_row(2, Zone::Delete);
     assert_eq!(f.calls.last(), Some(&PanelAction::Delete("id2".into())));
-    assert!(!f.model.is_open());
+    assert!(f.model.is_open()); // ✕ панель не закрывает: строка исчезнет, видно, что удалено
 }
 
 #[test]
@@ -317,29 +317,33 @@ fn test_delete_all_needs_second_click() {
     assert!(f.calls.is_empty());
     f.click_button("Точно удалить все?");
     assert_eq!(f.calls, [PanelAction::DeleteAll]);
-    assert!(!f.model.is_open());
+    assert!(f.model.is_open());
+    assert!(!f.model.confirm_all());
 }
 
 #[test]
 fn test_footer_actions() {
     let mut f = Fixture::new();
     let undo = || PanelState { undo: Some("x".into()), ..state() };
-    for (caption, action) in [
-        ("Метки: показаны", PanelAction::ToggleMarks),
-        ("Подсказки: вкл", PanelAction::ToggleHints),
-        ("Клавиши: Ctrl+Alt+Z ›", PanelAction::Hotkeys),
-        ("Цвет ›", PanelAction::Colors),
-        ("Справка", PanelAction::Help),
-        ("Выход", PanelAction::Exit),
+    // Переключатели оставляют панель открытой; окна, справка и выход закрывают.
+    for (caption, action, stays) in [
+        ("Метки: показаны", PanelAction::ToggleMarks, true),
+        ("Подсказки: вкл", PanelAction::ToggleHints, true),
+        ("Клавиши: Ctrl+Alt+Z ›", PanelAction::Hotkeys, false),
+        ("Цвет ›", PanelAction::Colors, false),
+        ("Справка", PanelAction::Help, false),
+        ("Выход", PanelAction::Exit, false),
     ] {
         f.open(make_rows(1), undo());
         f.click_button(caption);
         assert_eq!(f.calls.last(), Some(&action));
-        assert!(!f.model.is_open());
+        assert_eq!(f.model.is_open(), stays, "{caption}");
+        f.model.close();
     }
     f.open(make_rows(1), undo());
     f.click_button("Вернуть: «x»");
     assert_eq!(f.calls.last(), Some(&PanelAction::Undo));
+    assert!(f.model.is_open());
 }
 
 #[test]
@@ -598,6 +602,32 @@ fn hidden_window_clicks_keys_and_watch() {
     panel.update(make_rows(12), state());
     assert!(panel.is_open());
     drop(panel); // Drop закрывает окно
+}
+
+#[test]
+fn cross_click_keeps_window_open() {
+    let env = FakeEnv::new();
+    let (mut panel, calls) = recording_panel(env.clone());
+    let rows = make_rows(3);
+    assert!(panel.show(ANCHOR, rows.clone(), state()));
+    let hwnd = panel.hwnd();
+    let (fonts, mut model) = (PanelFonts::new(1.0), PanelModel::new());
+    let ctx = ShowContext { now: 0.0, anchor: ANCHOR, work_area: OFF_SCREEN, scale: 1.0, light: true, rounded: true, buttons: [false; 3] };
+    model.show(&ctx, rows, state(), &fonts);
+    let area = model.rows_rect().unwrap();
+    let p = Point { x: area.r - 10, y: area.t + ROW_HEIGHT + ROW_HEIGHT / 2 }; // ✕ второй строки
+    send(hwnd, WM_MOUSEMOVE, 0, lparam(p));
+    send(hwnd, WM_LBUTTONDOWN, 1, lparam(p));
+    send(hwnd, WM_LBUTTONUP, 0, lparam(p));
+    assert_eq!(*calls.borrow(), [PanelAction::Delete("id1".into())]);
+    assert!(panel.is_open());
+    assert_eq!(panel.hwnd(), hwnd);
+    // SAFETY: проверка дескриптора.
+    assert!(unsafe { IsWindow(to_hwnd(hwnd)).as_bool() });
+    // Список без удалённой строки приходит через update — окно то же.
+    panel.update(make_rows(2), state());
+    assert!(panel.is_open());
+    drop(panel);
 }
 
 #[test]

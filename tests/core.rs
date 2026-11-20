@@ -978,3 +978,50 @@ fn golden_misc_core() {
     }
     check.finish();
 }
+
+// ---------------------------------------------------------------- переход к чату приложения
+
+#[test]
+fn chat_names_strip_the_app_suffix() {
+    let names = |doc: &str| chat_names(doc);
+    assert_eq!(names("Выделение текста - Claude Code"), vec!["Выделение текста - Claude Code", "Выделение текста"]);
+    // Берётся последняя часть: дефисы внутри названия остаются.
+    assert_eq!(names("F - TG - resent: пересылка - Claude Code")[1], "F - TG - resent: пересылка");
+    assert_eq!(names("Чат — ChatGPT"), vec!["Чат — ChatGPT", "Чат"]);
+    assert_eq!(names("  Просто чат  "), vec!["Просто чат"]);
+    assert!(names("   ").is_empty());
+}
+
+#[test]
+fn pick_chat_item_exact_then_marked_and_never_ambiguous() {
+    let s = |v: &[&str]| v.iter().map(|x| x.to_string()).collect::<Vec<String>>();
+    let names = chat_names("Выделение текста - Claude Code");
+    // Боковая панель Claude: кнопка сессии с пометкой, рядом «Дополнительные параметры: …» и
+    // «…: переименовать сессию» — их нажимать нельзя.
+    let sidebar = s(&[
+        "Выделение текста: переименовать сессию",
+        "Виджет Остатков ИИ Выполняется",
+        "Выделение текста Выполняется",
+        "Дополнительные параметры: Выделение текста",
+    ]);
+    assert_eq!(pick_chat_item(&sidebar, &names), Some(2));
+    // Точное имя важнее имени с пометкой.
+    let exact = s(&["Выделение текста Выполняется", "Выделение текста"]);
+    assert_eq!(pick_chat_item(&exact, &names), Some(1));
+    // Два одинаковых или два с пометкой — не угадывать.
+    assert_eq!(pick_chat_item(&s(&["Выделение текста", "Выделение текста"]), &names), None);
+    assert_eq!(pick_chat_item(&s(&["Выделение текста 1", "Выделение текста 2"]), &names), None);
+    // Имя, которое лишь начинается так же без пробела, — не тот чат.
+    assert_eq!(pick_chat_item(&s(&["Выделение текстаX", "Выделение"]), &names), None);
+    assert_eq!(pick_chat_item(&s(&[]), &names), None);
+}
+
+#[test]
+fn sidebar_button_names() {
+    assert_eq!(sidebar_button("Показать боковую панель"), Some(true));
+    assert_eq!(sidebar_button("Скрыть боковую панель"), Some(false));
+    assert_eq!(sidebar_button("Show sidebar"), Some(true));
+    assert_eq!(sidebar_button("Close sidebar"), Some(false));
+    assert_eq!(sidebar_button("Панель сессий"), None);
+    assert_eq!(sidebar_button("Выделение текста Выполняется"), None);
+}

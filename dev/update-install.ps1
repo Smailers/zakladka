@@ -16,7 +16,13 @@ if ($Exe) {
         Write-Output "stopped $old"
     }
     Copy-Item -LiteralPath (Join-Path $native 'target\release\Zakladka.exe') -Destination $install -Force
-    $new = Start-Process -FilePath (Join-Path $install 'Zakladka.exe') -WorkingDirectory $install -PassThru
+    # Свежий exe антивирус может несколько секунд не давать запустить («Отказано в доступе»).
+    $new = $null
+    for ($try = 1; $try -le 10 -and -not $new; $try++) {
+        try { $new = Start-Process -FilePath (Join-Path $install 'Zakladka.exe') -WorkingDirectory $install -PassThru }
+        catch { Write-Output "start attempt $try failed: $($_.Exception.Message)"; Start-Sleep -Seconds 2 }
+    }
+    if (-not $new) { Write-Output 'NOT STARTED'; exit 1 }
     Set-Content -LiteralPath $pidFile -Value $new.Id
     Write-Output "started $($new.Id)"
 }

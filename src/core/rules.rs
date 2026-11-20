@@ -59,6 +59,59 @@ pub fn page_key(url: &str, name: &str) -> String {
     title_key(name)
 }
 
+/// Названия, под которыми приложение может показывать документ `doc` в своём списке чатов: само
+/// название и оно же без последней части « - Программа» (заголовок страницы «Сессия - Claude Code»
+/// → пункт «Сессия»; так же « — », « – », « | »).
+pub fn chat_names(doc: &str) -> Vec<String> {
+    let doc = py_strip(doc);
+    let mut names: Vec<String> = Vec::new();
+    if doc.is_empty() {
+        return names;
+    }
+    names.push(doc.to_string());
+    for separator in [" - ", " — ", " – ", " | "] {
+        if let Some(at) = doc.rfind(separator) {
+            let head = py_strip(&doc[..at]);
+            if !head.is_empty() && !names.iter().any(|n| n == head) {
+                names.push(head.to_string());
+            }
+        }
+    }
+    names
+}
+
+/// Какой пункт списка чатов нажать: единственный, чьё имя — одно из `names` целиком; если таких
+/// нет — единственный, чьё имя — название и пометка через пробел («Сессия Выполняется» у Claude).
+/// Несколько подходящих или ни одного — `None`: лучше не переходить, чем открыть не тот чат.
+pub fn pick_chat_item(labels: &[String], names: &[String]) -> Option<usize> {
+    let only = |hits: Vec<usize>| if hits.len() == 1 { Some(hits[0]) } else { None };
+    let exact: Vec<usize> =
+        (0..labels.len()).filter(|&i| names.iter().any(|n| py_strip(&labels[i]) == n.as_str())).collect();
+    if !exact.is_empty() {
+        return only(exact);
+    }
+    let marked: Vec<usize> = (0..labels.len())
+        .filter(|&i| {
+            let label = py_strip(&labels[i]);
+            names.iter().any(|n| label.strip_prefix(n.as_str()).is_some_and(|rest| rest.starts_with(' ')))
+        })
+        .collect();
+    only(marked)
+}
+
+/// Кнопка боковой панели окна (где у приложений список чатов): `Some(true)` — открывает её
+/// («Показать боковую панель», «Show sidebar»), `Some(false)` — прячет («Скрыть…», «Hide…»),
+/// `None` — не она.
+pub fn sidebar_button(name: &str) -> Option<bool> {
+    let key = casefold_str(py_strip(name));
+    let sidebar = (key.contains("боков") && key.contains("панел")) || key.contains("sidebar") || key.contains("side bar");
+    if !sidebar {
+        return None;
+    }
+    let hides = ["скрыть", "свернуть", "закрыть", "hide", "close", "collapse"].iter().any(|w| key.starts_with(w));
+    Some(!hides)
+}
+
 /// `\w` модуля `re` Python для строки: буква или цифра Unicode, или «_».
 fn word_char(c: char) -> bool {
     c == '_' || (c.is_alphanumeric() && !unicode_normalization::char::is_combining_mark(c))

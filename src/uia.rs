@@ -25,16 +25,32 @@ use windows::Win32::System::Ole::{
 use windows::Win32::System::Variant::{VARENUM, VT_I4, VT_R8};
 use windows::Win32::UI::Accessibility::{
     CUIAutomation, CUIAutomation8, IUIAutomation, IUIAutomation2, IUIAutomationCacheRequest,
-    IUIAutomationElement, IUIAutomationElementArray, IUIAutomationInvokePattern,
+    IUIAutomationCondition, IUIAutomationElement, IUIAutomationExpandCollapsePattern,
+    ExpandCollapseState_Collapsed, ExpandCollapseState_Expanded, ExpandCollapseState_LeafNode,
+    UIA_ExpandCollapsePatternId, IUIAutomationElementArray, IUIAutomationInvokePattern,
     IUIAutomationScrollItemPattern, IUIAutomationSelectionItemPattern, IUIAutomationTextPattern,
     IUIAutomationTextRange, IUIAutomationTreeWalker, IUIAutomationValuePattern, TextPatternRangeEndpoint_End,
     TextPatternRangeEndpoint_Start, TextUnit_Character, TextUnit_Line, TreeScope_Descendants, TreeScope_Subtree,
-    UIA_BoundingRectanglePropertyId, UIA_CONTROLTYPE_ID, UIA_ControlTypePropertyId, UIA_DocumentControlTypeId,
-    UIA_HyperlinkControlTypeId, UIA_InvokePatternId, UIA_NamePropertyId, UIA_ScrollItemPatternId,
-    UIA_SelectionItemPatternId, UIA_TabItemControlTypeId, UIA_TextPatternId, UIA_ValuePatternId,
+    UIA_BoundingRectanglePropertyId, UIA_ButtonControlTypeId, UIA_CONTROLTYPE_ID, UIA_ControlTypePropertyId,
+    UIA_DocumentControlTypeId, UIA_HyperlinkControlTypeId, UIA_InvokePatternId, UIA_ListItemControlTypeId,
+    UIA_NamePropertyId, UIA_ScrollItemPatternId, UIA_SelectionItemPatternId, UIA_TabItemControlTypeId,
+    UIA_TextPatternId, UIA_TreeItemControlTypeId, UIA_ValuePatternId,
 };
 
 use crate::core::flatten::grapheme_extra;
+use crate::core::rules::{chat_names, pick_chat_item, sidebar_button};
+
+/// Чем может быть пункт списка чатов приложения.
+const CHAT_ITEM_KINDS: [UIA_CONTROLTYPE_ID; 5] = [
+    UIA_HyperlinkControlTypeId,
+    UIA_ButtonControlTypeId,
+    UIA_ListItemControlTypeId,
+    UIA_TreeItemControlTypeId,
+    UIA_TabItemControlTypeId,
+];
+/// После открытия боковой панели список появляется не сразу: столько попыток через столько.
+const SIDEBAR_TRIES: usize = 8;
+const SIDEBAR_STEP: Duration = Duration::from_millis(150);
 use crate::core::geometry::to_rects;
 use crate::core::matching::find;
 use crate::types::{to_hwnd, Hwnd, Point, Rect};
@@ -604,29 +620,121 @@ impl Uia {
         }
     }
 
-    /// Ровно одна Hyperlink с точным именем.
-    /// Условие «Hyperlink 50005 И Name = имя»; найдено не ровно одна — `false` (список чатов приложения).
-    pub fn invoke_link(&self, hwnd: Hwnd, name: &str) -> bool {
+    /// Пункт списка чатов приложения для документа `doc`: ссылка, кнопка, пункт списка, дерева или
+    /// вкладка, выбранный `core::rules::pick_chat_item` по названию (целиком или без « - Программа»;
+    /// у Claude сессия — кнопка «Сессия Выполняется»). Нажатие — Invoke, иначе выбор (SelectionItem).
+    /// Список спрятан (у Claude — свёрнутая боковая панель): панель открывается, пункт нажимается,
+    /// панель сворачивается обратно. Не нашлось — `false`.
+    pub fn invoke_link(&self, hwnd: Hwnd, doc: &str) -> bool {
         let Some(root) = self.window_root(hwnd) else { return false };
+        let names = chat_names(doc);
+        if names.is_empty() {
+            return false;
+        }
+        if self.press_chat_item(&root, &names) {
+            return true;
+        }
+        if !self.toggle_sidebar(&root, true) {
+            return false;
+        }
+        let mut pressed = false;
+        for _ in 0..SIDEBAR_TRIES {
+            std::thread::sleep(SIDEBAR_STEP);
+            if self.press_chat_item(&root, &names) {
+                pressed = true;
+                break;
+            }
+        }
+        std::thread::sleep(SIDEBAR_STEP);
+        self.toggle_sidebar(&root, false);
+        pressed
+    }
+
+    /// Нажать пункт списка чатов (см. `invoke_link`). Имена всех кандидатов — одним вызовом
+    /// (FindAllBuildCache).
+    fn press_chat_item(&self, root: &IUIAutomationElement, names: &[String]) -> bool {
+        let Some((items, labels)) = self.named(root, &CHAT_ITEM_KINDS) else { return false };
+        let Some(index) = pick_chat_item(&labels, names) else { return false };
+        let target = &items[index];
         // SAFETY: вызовы COM; любая ошибка — `false`.
-        let invoked = || -> windows::core::Result<bool> {
+        unsafe {
+            if let Ok(invoke) = target.GetCurrentPatternAs::<IUIAutomationInvokePattern>(UIA_InvokePatternId) {
+                return invoke.Invoke().is_ok();
+            }
+            target
+                .GetCurrentPatternAs::<IUIAutomationSelectionItemPattern>(UIA_SelectionItemPatternId)
+                .and_then(|item| item.Select())
+                .is_ok()
+        }
+    }
+
+    /// Открыть (`open`) или свернуть боковую панель окна: кнопка с именем вроде «Показать боковую
+    /// панель» / «Скрыть боковую панель» (`core::rules::sidebar_button`). Открыть — ExpandCollapse в
+    /// состоянии «свёрнуто»; свернуть — ExpandCollapse «развёрнуто» или Invoke кнопки «Скрыть…».
+    fn toggle_sidebar(&self, root: &IUIAutomationElement, open: bool) -> bool {
+        let Some((items, labels)) = self.named(root, &[UIA_ButtonControlTypeId]) else { return false };
+        for (element, label) in items.iter().zip(&labels) {
+            let Some(shows) = sidebar_button(label) else { continue };
+            // SAFETY: вызовы COM; ошибка — следующий кандидат.
             unsafe {
-                let link = self
-                    .automation
-                    .CreatePropertyCondition(UIA_ControlTypePropertyId, &VARIANT::from(UIA_HyperlinkControlTypeId.0))?;
-                let named = self.automation.CreatePropertyCondition(UIA_NamePropertyId, &VARIANT::from(name))?;
-                let both = self.automation.CreateAndCondition(&link, &named)?;
-                let found = root.FindAll(TreeScope_Descendants, &both)?;
-                if found.Length()? != 1 {
-                    return Ok(false);
+                if let Ok(pattern) =
+                    element.GetCurrentPatternAs::<IUIAutomationExpandCollapsePattern>(UIA_ExpandCollapsePatternId)
+                {
+                    let state = pattern.CurrentExpandCollapseState().unwrap_or(ExpandCollapseState_LeafNode);
+                    let done = if open && state == ExpandCollapseState_Collapsed {
+                        pattern.Expand().is_ok()
+                    } else if !open && state == ExpandCollapseState_Expanded {
+                        pattern.Collapse().is_ok()
+                    } else {
+                        false
+                    };
+                    if done {
+                        return true;
+                    }
                 }
-                let invoke =
-                    found.GetElement(0)?.GetCurrentPatternAs::<IUIAutomationInvokePattern>(UIA_InvokePatternId)?;
-                invoke.Invoke()?;
-                Ok(true)
+                if shows == open {
+                    if let Ok(invoke) = element.GetCurrentPatternAs::<IUIAutomationInvokePattern>(UIA_InvokePatternId) {
+                        if invoke.Invoke().is_ok() {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        false
+    }
+
+    /// Элементы окна заданных типов и их имена (кэш одним вызовом).
+    fn named(
+        &self,
+        root: &IUIAutomationElement,
+        kinds: &[UIA_CONTROLTYPE_ID],
+    ) -> Option<(Vec<IUIAutomationElement>, Vec<String>)> {
+        // SAFETY: вызовы COM; любая ошибка — `None`.
+        let found = || -> windows::core::Result<(Vec<IUIAutomationElement>, Vec<String>)> {
+            unsafe {
+                let mut any: Option<IUIAutomationCondition> = None;
+                for kind in kinds {
+                    let one = self.automation.CreatePropertyCondition(UIA_ControlTypePropertyId, &VARIANT::from(kind.0))?;
+                    any = Some(match any {
+                        None => one,
+                        Some(before) => self.automation.CreateOrCondition(&before, &one)?,
+                    });
+                }
+                let (mut items, mut labels) = (Vec::new(), Vec::new());
+                let Some(any) = any else { return Ok((items, labels)) };
+                let request = self.automation.CreateCacheRequest()?;
+                request.AddProperty(UIA_NamePropertyId)?;
+                let array = root.FindAllBuildCache(TreeScope_Descendants, &any, &request)?;
+                for i in 0..array.Length()? {
+                    let Ok(element) = array.GetElement(i) else { continue };
+                    labels.push(element.CachedName().map(|n| bstr(&n)).unwrap_or_default());
+                    items.push(element);
+                }
+                Ok((items, labels))
             }
         };
-        invoked().unwrap_or(false)
+        found().ok()
     }
 
     /// (id от элемента вверх до его Document, не включая; id Document и выше).

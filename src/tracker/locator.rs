@@ -22,6 +22,8 @@ use crate::win::{monotonic, Api, Wake};
 const SEGMENT_LIMIT: usize = 30_000;
 /// Сколько ждать документ с нужной страницей после перехода, и шаг ожидания (P 1961–1974).
 const GOTO_WAIT_S: f64 = 2.5;
+/// После переключения вкладки или чата: чату нужно время, чтобы открыться и показать переписку.
+const GOTO_WAIT_SWITCHED_S: f64 = 6.0;
 const GOTO_STEP: Duration = Duration::from_millis(150);
 /// `best_occurrence(min_score=0.6)` по умолчанию в Python.
 const MIN_SCORE: f64 = 0.6;
@@ -212,19 +214,37 @@ impl Locator {
                 self.closest_window(&windows, title, doc)
             }
         };
+        let mut chosen = chosen;
         self.api.bring_up(chosen);
+        let mut switched = false;
         if let Some(tab) = &tab {
-            self.uia.select(tab);
-        } else if !doc.is_empty() && item.mode != Mode::Ocr {
-            self.uia.invoke_link(chosen, doc); // пункт списка чатов с точно таким именем, если есть
+            switched = self.uia.select(tab);
+        } else if !doc.is_empty()
+            && item.mode != Mode::Ocr
+            && !self.page_shown(chosen, self.api.process(chosen).0, &item.page)
+        {
+            // Пункт списка чатов с этим названием (у Claude — «Сессия Выполняется»), если он один.
+            switched = self.uia.invoke_link(chosen, doc);
+            // У программы несколько окон с одним заголовком: список чатов может быть в другом.
+            let first = chosen;
+            for &other in windows.iter().filter(|&&h| h != first) {
+                if switched {
+                    break;
+                }
+                if self.uia.invoke_link(other, doc) {
+                    self.api.bring_up(other);
+                    chosen = other;
+                    switched = true;
+                }
+            }
         }
+        let pid = self.api.process(chosen).0;
         if item.mode == Mode::Ocr {
             self.commands.send(Command::Flash(item.id.clone()));
             return;
         }
-        let pid = self.api.process(chosen).0;
         let (quote, prefix, suffix) = (to_flat(&item.quote), to_flat(&item.prefix), to_flat(&item.suffix));
-        let deadline = monotonic() + GOTO_WAIT_S;
+        let deadline = monotonic() + if switched { GOTO_WAIT_SWITCHED_S } else { GOTO_WAIT_S };
         while monotonic() < deadline {
             for (_, scope) in self.uia.shown_scopes(chosen, pid, self.api.window_rect(chosen)) {
                 if !item.page.is_empty() {
@@ -257,6 +277,15 @@ impl Locator {
             return self.toast(format!("Откройте «{}» — там закладка", head(doc, 40)));
         }
         self.toast("Текст закладки на странице не найден".to_string());
+    }
+
+    /// Страница закладки (`page`) уже показана в окне — переключать чат не нужно.
+    fn page_shown(&self, hwnd: Hwnd, pid: u32, page: &str) -> bool {
+        !page.is_empty()
+            && self.uia.shown_scopes(hwnd, pid, self.api.window_rect(hwnd)).iter().any(|(_, scope)| {
+                let (url, name) = self.uia.document_info(scope);
+                page_key(&url, &name) == page
+            })
     }
 
     /// Окно с заголовком, больше всего похожим на заголовок закладки или название документа

@@ -43,6 +43,22 @@ pub enum PanelAction {
     Closed,
 }
 
+impl PanelAction {
+    /// Действие меняет только список или переключатель — панель остаётся открытой, чтобы был виден
+    /// результат (строка исчезла, «Вернуть», новая подпись). Переход, окна клавиш и цветов, справка,
+    /// выход и закрытие панель закрывают.
+    pub fn keeps_panel(&self) -> bool {
+        matches!(
+            self,
+            PanelAction::Delete(_)
+                | PanelAction::Undo
+                | PanelAction::DeleteAll
+                | PanelAction::ToggleMarks
+                | PanelAction::ToggleHints
+        )
+    }
+}
+
 /// Размеры при 96 DPI (N 640–644).
 pub const WIDTH: i32 = 380;
 pub const ROW_HEIGHT: i32 = 32;
@@ -775,7 +791,11 @@ impl PanelModel {
     }
 
     fn act(&mut self, action: PanelAction) -> Option<PanelAction> {
-        self.close();
+        if action.keeps_panel() {
+            self.confirm_all = false;
+        } else {
+            self.close();
+        }
         Some(action)
     }
 
