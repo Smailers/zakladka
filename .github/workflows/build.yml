@@ -1,0 +1,106 @@
+# Сборка «Закладки» на GitHub Actions: тесты, release-сборка, проверка библиотек exe (dist.ps1),
+# архив — каждый push в main, pull request и запуск вручную.
+# Метка v* — ещё подпись Zakladka.exe через SignPath (бесплатно для открытых проектов, сертификат
+# SignPath Foundation) и черновик выпуска с подписанным архивом. Подпись включается, когда в
+# настройках репозитория заданы переменные SIGNPATH_ORGANIZATION_ID, SIGNPATH_PROJECT_SLUG,
+# SIGNPATH_SIGNING_POLICY_SLUG и секрет SIGNPATH_API_TOKEN. Каждую подпись вручную одобряет
+# ответственный за выпуск в SignPath (см. «Code signing policy» в README.md).
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      artifact-id: ${{ steps.upload.outputs.artifact-id }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Rust stable-x86_64-pc-windows-gnu
+        shell: pwsh
+        run: |
+          rustup toolchain install stable-x86_64-pc-windows-gnu --profile minimal --no-self-update
+          rustup default stable-x86_64-pc-windows-gnu
+          rustc -vV
+
+      - name: Tests
+        shell: pwsh
+        run: cargo test --locked
+
+      - name: Release build, import check, archive (dist.ps1)
+        shell: powershell
+        run: .\dist.ps1
+
+      - name: Version
+        id: version
+        shell: pwsh
+        run: |
+          $match = Select-String -Path Cargo.toml -Pattern '^version = "([^"]+)"' | Select-Object -First 1
+          "version=$($match.Matches[0].Groups[1].Value)" >> $env:GITHUB_OUTPUT
+
+      - name: Upload unsigned build
+        id: upload
+        uses: actions/upload-artifact@v7
+        with:
+          name: Zakladka-${{ steps.version.outputs.version }}-win-x64-unsigned
+          path: dist/Zakladka-${{ steps.version.outputs.version }}-win-x64/
+          if-no-files-found: error
+
+  sign:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v') && vars.SIGNPATH_ORGANIZATION_ID != ''
+    runs-on: windows-latest
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - name: Sign Zakladka.exe (SignPath)
+        uses: signpath/github-action-submit-signing-request@v3
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ vars.SIGNPATH_SIGNING_POLICY_SLUG }}
+          github-artifact-id: ${{ needs.build.outputs.artifact-id }}
+          wait-for-completion: true
+          # подпись одобряется вручную — ждать до часа
+          wait-for-completion-timeout-in-seconds: 3600
+          output-artifact-directory: signed
+
+      - name: Check signature, archive, checksums
+        shell: pwsh
+        run: |
+          $version = '${{ needs.build.outputs.version }}'
+          $signature = Get-AuthenticodeSignature -LiteralPath signed/Zakladka.exe
+          if ($signature.Status -ne 'Valid') { throw "Zakladka.exe: signature $($signature.Status) — $($signature.StatusMessage)" }
+          Write-Output "signed by: $($signature.SignerCertificate.Subject)"
+          $zip = "Zakladka-$version-win-x64.zip"
+          Compress-Archive -Path signed/* -DestinationPath $zip
+          $lines = foreach ($file in @($zip, 'signed/Zakladka.exe')) {
+              '{0}  {1}' -f (Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLower(), (Split-Path -Leaf $file)
+          }
+          [IO.File]::WriteAllLines("$PWD/SHA256SUMS.txt", $lines)
+          Get-Content SHA256SUMS.txt
+
+      - name: Draft release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $version = '${{ needs.build.outputs.version }}'
+          $notes = @"
+          Zakladka.exe built by GitHub Actions from tag $env:GITHUB_REF_NAME and signed via SignPath.
+
+          Free code signing provided by [SignPath.io](https://about.signpath.io/), certificate by [SignPath Foundation](https://signpath.org/). [Code signing policy](https://github.com/$env:GITHUB_REPOSITORY#code-signing-policy).
+          "@
+          gh release create $env:GITHUB_REF_NAME "Zakladka-$version-win-x64.zip" SHA256SUMS.txt --repo $env:GITHUB_REPOSITORY --draft --title "Закладка $version" --notes $notes

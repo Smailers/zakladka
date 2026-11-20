@@ -22,6 +22,7 @@ Windows 10 (версия 1903 и новее) и Windows 11 · один файл 
 - [Если в Windows нет распознавания текста](#если-в-windows-нет-распознавания-текста)
 - [Удаление](#удаление)
 - [Для разработчиков](#для-разработчиков)
+- [Code signing policy](#code-signing-policy)
 - [Лицензия](#лицензия)
 
 ---
@@ -422,6 +423,26 @@ build.ps1  dist.ps1  install_autostart.ps1  uninstall_autostart.ps1
    ```
 
 Папки `target*\` и `dist\` в репозиторий не попадают (`.gitignore`).
+
+Официальные выпуски собирает GitHub Actions (`.github\workflows\build.yml`): на каждый push — тесты, сборка, проверка библиотек и архив (неподписанная сборка остаётся во вкладке Actions); на метку `v*` — ещё подпись `Zakladka.exe` через SignPath и черновик выпуска с подписанным архивом и `SHA256SUMS.txt`.
+
+---
+
+## Code signing policy
+
+Free code signing provided by [SignPath.io](https://about.signpath.io/), certificate by [SignPath Foundation](https://signpath.org/).
+
+**Как подписываются выпуски.** `Zakladka.exe` для страницы [Releases](../../releases) собирается только из исходников этого репозитория на серверах GitHub Actions (`.github\workflows\build.yml`) и подписывается через SignPath. Сертификат принадлежит SignPath Foundation, поэтому в свойствах файла («Цифровые подписи») издателем указан SignPath Foundation. Каждую подпись вручную одобряет ответственный за выпуск. Подписываются выпуски начиная со следующего после 2.0.0, когда SignPath Foundation одобрит проект. Выпуск 2.0.0 собран вручную и не подписан.
+
+**Роли.**
+
+| Роль | Кто |
+|---|---|
+| Авторы (меняют исходники без отдельной проверки) | [Smailers](https://github.com/Smailers) |
+| Проверяющие (смотрят изменения от остальных — pull requests) | [Smailers](https://github.com/Smailers) |
+| Одобряющие подпись выпуска | [Smailers](https://github.com/Smailers) |
+
+**Privacy policy.** This program will not transfer any information to other networked systems unless specifically requested by the user or the person installing or operating it. Программа не обращается к сети вовсе: в ней нет сетевого кода, телеметрии и проверки обновлений (подробнее — раздел [Приватность](#приватность)).
 
 ---
 
