@@ -1,0 +1,4084 @@
+[
+ [
+  [],
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  "text",
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  5,
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  null,
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {},
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "hotkey_extra": "Ctrl+C",
+   "opacity": 2,
+   "color": "#00ff00",
+   "bar_color": "red",
+   "max_age_days": 7,
+   "max_bookmarks": true,
+   "debug": true,
+   "unknown": 1
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#00ff00",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 7,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "color": "#00ff00",
+   "debug": false,
+   "hotkey_extra": "Ctrl+Win+Space",
+   "opacity": 0.0999,
+   "max_bookmarks": 10,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "unknown": "x",
+   "copy_fallback": false,
+   "hotkey_mark": 5,
+   "ocr": true,
+   "label_color": "auto",
+   "max_age_days": 7,
+   "hints": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#00ff00",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 7,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "color": null,
+   "opacity": 0.5,
+   "max_bookmarks": 1234,
+   "label_color": "#fff",
+   "debug": 1,
+   "unknown": [
+    1,
+    2
+   ],
+   "ocr": false,
+   "hints": "true",
+   "bar_color": "orange",
+   "max_age_days": "7"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.5,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "#12345G",
+   "unknown": "x",
+   "hints": 1
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": "#abcdef",
+   "debug": null,
+   "hints": false,
+   "unknown": 1,
+   "copy_fallback": "no",
+   "hotkey_extra": "Ctrl+Alt+F25"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#abcdef",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "ocr": 1,
+   "hints": false,
+   "copy_fallback": true,
+   "max_age_days": 3651,
+   "debug": false,
+   "unknown": "x",
+   "hotkey_extra": "Shift+A",
+   "color": 7,
+   "label_color": "AUTO",
+   "bar_color": "#34C759",
+   "hotkey_mark": 5
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 1,
+   "debug": true,
+   "unknown": [
+    1,
+    2
+   ],
+   "max_age_days": 3650
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 3650,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 5001,
+   "max_age_days": 7.0
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "#fff",
+   "unknown": "x",
+   "max_age_days": true,
+   "ocr": true,
+   "hotkey_mark": 5,
+   "debug": 1,
+   "max_bookmarks": 5000,
+   "copy_fallback": "no"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 5000,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 9,
+   "label_color": "auto",
+   "opacity": true,
+   "unknown": "x",
+   "debug": true,
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#12345G",
+   "copy_fallback": false,
+   "hotkey_mark": null,
+   "bar_color": "#34C759",
+   "max_age_days": 1,
+   "hints": null,
+   "ocr": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 1,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "hotkey_extra": true,
+   "hints": 1,
+   "max_age_days": 30,
+   "label_color": "AUTO",
+   "unknown": [
+    1,
+    2
+   ],
+   "bar_color": "#34C759"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "ocr": false,
+   "debug": true,
+   "opacity": 0.05,
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "hints": 0
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Win+Space",
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "max_bookmarks": 5001,
+   "copy_fallback": "no",
+   "label_color": "AUTO",
+   "hints": 1,
+   "unknown": "x",
+   "max_age_days": 0,
+   "opacity": 0.0999,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "debug": true,
+   "color": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "color": "#FFD400",
+   "hints": "true",
+   "label_color": "#ABCDEF"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#ABCDEF",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "red",
+   "ocr": true,
+   "label_color": "red",
+   "unknown": "x",
+   "max_bookmarks": 300,
+   "hints": false,
+   "debug": 1,
+   "max_age_days": 7.0,
+   "opacity": 0.1,
+   "hotkey_extra": "Shift+A"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.1,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": true,
+   "bar_color": "",
+   "opacity": 0.9,
+   "hotkey_mark": "Win+Shift+B",
+   "label_color": "red",
+   "hints": true
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.9,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "debug": false,
+   "unknown": [
+    1,
+    2
+   ],
+   "max_age_days": 3651,
+   "opacity": 0.5,
+   "color": "#12345G",
+   "copy_fallback": "no",
+   "hotkey_extra": "Shift+A",
+   "hotkey_mark": "Win+Shift+B",
+   "hints": null
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.5,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "opacity": true,
+   "unknown": 1,
+   "color": "#fff"
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 10,
+   "unknown": [
+    1,
+    2
+   ],
+   "hints": 1,
+   "max_age_days": 30,
+   "hotkey_mark": "Alt+F4",
+   "copy_fallback": false,
+   "bar_color": "orange",
+   "color": 7,
+   "hotkey_extra": true,
+   "debug": true,
+   "ocr": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": false,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "copy_fallback": false,
+   "hotkey_mark": "Ctrl+C",
+   "bar_color": "#00FF00"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 10,
+   "hotkey_mark": "Win+Shift+B",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "label_color": "auto",
+   "copy_fallback": false,
+   "color": null,
+   "opacity": 2,
+   "ocr": false
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": 30,
+   "bar_color": "orange",
+   "label_color": 5
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "#FFD400",
+   "debug": false,
+   "max_age_days": 7.0
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 10,
+   "max_age_days": 1,
+   "hotkey_mark": "Win+Shift+B",
+   "hints": true
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 1,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": "x",
+   "label_color": 5,
+   "opacity": 0.35
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "bar_color": "#34C759",
+   "debug": null,
+   "color": null,
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "max_bookmarks": true,
+   "ocr": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "#00FF00"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "orange",
+   "label_color": "AUTO",
+   "hotkey_extra": "Shift+A",
+   "hints": 1,
+   "unknown": 1,
+   "opacity": 0.0999,
+   "ocr": true,
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "debug": 1
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Shift+A",
+   "hotkey_mark": "",
+   "unknown": [
+    1,
+    2
+   ],
+   "color": 7,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "max_bookmarks": 300,
+   "label_color": "#ABCDEF",
+   "ocr": 1,
+   "hints": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#ABCDEF",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": "#fff",
+   "debug": true,
+   "max_bookmarks": 9
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "ocr": true,
+   "unknown": 1,
+   "copy_fallback": true,
+   "hints": "true",
+   "hotkey_extra": "Shift+A",
+   "color": null,
+   "opacity": 0.9,
+   "label_color": "#abcdef"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.9,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#abcdef",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "ocr": false,
+   "hotkey_extra": "Shift+A",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "hints": 1,
+   "max_age_days": "7",
+   "hotkey_mark": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "opacity": null,
+   "ocr": 1,
+   "hints": false,
+   "max_age_days": 1,
+   "copy_fallback": true,
+   "debug": 1,
+   "hotkey_extra": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 1,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 5001,
+   "unknown": [
+    1,
+    2
+   ],
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "bar_color": "",
+   "opacity": 0.35,
+   "max_age_days": 3650,
+   "label_color": null,
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "debug": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "#FF7A00",
+   "max_age_days": 3650,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": 5,
+   "color": "#ABCDEF",
+   "max_age_days": 0,
+   "debug": null,
+   "unknown": "x",
+   "copy_fallback": false,
+   "hotkey_extra": "Ctrl+Win+Space",
+   "label_color": "AUTO",
+   "max_bookmarks": 1234,
+   "opacity": 2,
+   "ocr": 1,
+   "hints": false,
+   "bar_color": "#34C759"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#ABCDEF",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "ocr": true,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "opacity": 0.5,
+   "copy_fallback": true,
+   "max_bookmarks": 10.0,
+   "hotkey_extra": "Ctrl+Alt+F25"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.5,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": null,
+   "opacity": 0.35,
+   "ocr": 1,
+   "max_bookmarks": 1234,
+   "unknown": [
+    1,
+    2
+   ],
+   "hints": 0,
+   "max_age_days": 7.0,
+   "debug": true,
+   "label_color": "auto",
+   "hotkey_mark": "",
+   "bar_color": "orange",
+   "copy_fallback": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "debug": true,
+   "unknown": "x"
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "unknown": 1,
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "debug": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": "#abcdef",
+   "max_age_days": -1,
+   "max_bookmarks": 5001,
+   "copy_fallback": false,
+   "unknown": "x",
+   "hints": 1,
+   "debug": true,
+   "color": "#FFD400",
+   "hotkey_extra": "Shift+A",
+   "ocr": false,
+   "bar_color": "#00FF00"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#abcdef",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": false,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "color": "red",
+   "ocr": 1,
+   "debug": null,
+   "hints": 1,
+   "bar_color": "orange",
+   "label_color": null,
+   "opacity": 0.0999
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 300,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "hints": null,
+   "hotkey_mark": "Ctrl+C",
+   "bar_color": [
+    "#00FF00"
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": 3651,
+   "color": null,
+   "bar_color": "#00FF00",
+   "unknown": [
+    1,
+    2
+   ],
+   "debug": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "opacity": 0.5,
+   "color": "#00ff00",
+   "max_bookmarks": 300
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#00ff00",
+   "opacity": 0.5,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "ocr": 1,
+   "hints": null,
+   "copy_fallback": true,
+   "debug": true,
+   "color": "#fff",
+   "max_bookmarks": 5000,
+   "hotkey_mark": "",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "label_color": "#abcdef",
+   "max_age_days": 0
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 5000,
+   "label_color": "#abcdef",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "opacity": 0.5,
+   "label_color": "red",
+   "debug": true,
+   "max_bookmarks": 300,
+   "bar_color": "#00FF00"
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.5,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "copy_fallback": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "hotkey_mark": 5,
+   "max_age_days": 7,
+   "copy_fallback": "no"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 7,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "#ABCDEF",
+   "hotkey_mark": "Alt+F4",
+   "hints": 1,
+   "max_age_days": 7,
+   "opacity": 0.5,
+   "max_bookmarks": true,
+   "bar_color": "orange",
+   "copy_fallback": "no",
+   "label_color": "#fff",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "unknown": "x",
+   "ocr": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#ABCDEF",
+   "opacity": 0.5,
+   "bar_color": "#FF7A00",
+   "max_age_days": 7,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": -1,
+   "max_bookmarks": 300,
+   "hotkey_mark": "Win+Shift+B",
+   "opacity": 2
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": [
+    1,
+    2
+   ],
+   "max_age_days": 3651
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": "7",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "unknown": [
+    1,
+    2
+   ],
+   "label_color": "red",
+   "hotkey_mark": "ctrl + alt + f5",
+   "copy_fallback": "no",
+   "max_bookmarks": 9,
+   "hints": 1,
+   "debug": false,
+   "ocr": false
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "",
+   "color": "#ABCDEF",
+   "max_bookmarks": true,
+   "ocr": true,
+   "max_age_days": 7.0,
+   "opacity": 0.05,
+   "unknown": [
+    1,
+    2
+   ],
+   "hints": null,
+   "label_color": "#fff",
+   "debug": false,
+   "hotkey_mark": "Ctrl+C",
+   "copy_fallback": false,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#ABCDEF",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 10,
+   "hints": "true",
+   "debug": null,
+   "hotkey_extra": true,
+   "hotkey_mark": null,
+   "max_age_days": "7",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "color": "#12345G"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": null,
+   "unknown": "x",
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "copy_fallback": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": [
+    1,
+    2
+   ],
+   "debug": 1,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "hints": null,
+   "copy_fallback": "no",
+   "ocr": 1,
+   "bar_color": "#00FF00",
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "opacity": 0.1,
+   "label_color": "red",
+   "max_bookmarks": 1234,
+   "max_age_days": 30,
+   "color": "#00ff00"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#00ff00",
+   "opacity": 0.1,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Win+Space",
+   "ocr": true,
+   "debug": 1,
+   "hints": true,
+   "max_age_days": 7.0,
+   "unknown": "x"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "#00FF00"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": true,
+   "hotkey_mark": null,
+   "opacity": 0.05,
+   "copy_fallback": false,
+   "label_color": "#abcdef",
+   "debug": 1
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#abcdef",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "#00FF00",
+   "color": "#ABCDEF",
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "max_age_days": 0
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#ABCDEF",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": 0,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "ocr": true,
+   "opacity": true,
+   "label_color": "red",
+   "debug": null,
+   "copy_fallback": true,
+   "unknown": "x",
+   "max_bookmarks": 5001,
+   "color": "#12345G",
+   "hotkey_mark": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 1,
+   "max_age_days": 3651,
+   "color": null,
+   "hints": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "",
+   "hotkey_mark": "ctrl + alt + f5",
+   "max_age_days": 3650,
+   "unknown": "x",
+   "opacity": 2
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 3650,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "debug": true,
+   "max_age_days": -1,
+   "max_bookmarks": 5001,
+   "unknown": 1,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#fff",
+   "opacity": 0.0999
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Shift+A",
+   "debug": null,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "color": "#FFD400",
+   "ocr": true,
+   "max_age_days": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 0.5,
+   "color": "#FFD400",
+   "label_color": "#fff",
+   "unknown": 1,
+   "hotkey_mark": "",
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "ocr": false,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "max_bookmarks": 9,
+   "max_age_days": 7,
+   "debug": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.5,
+   "bar_color": "#FF7A00",
+   "max_age_days": 7,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "debug": true,
+   "max_bookmarks": 5000,
+   "hints": false,
+   "max_age_days": "7",
+   "copy_fallback": true,
+   "unknown": "x",
+   "bar_color": "#00FF00",
+   "ocr": true,
+   "hotkey_extra": "Ctrl+Win+Space"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 5000,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "hints": null,
+   "ocr": true,
+   "debug": false,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "hotkey_mark": "Alt+F4"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 5000,
+   "hints": null,
+   "hotkey_mark": "Ctrl+C",
+   "bar_color": "orange",
+   "debug": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 5000,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "bar_color": [
+    "#00FF00"
+   ],
+   "max_age_days": 7,
+   "debug": false,
+   "unknown": "x",
+   "copy_fallback": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 7,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": null,
+   "color": "#FFD400",
+   "copy_fallback": true,
+   "hotkey_mark": 5,
+   "ocr": 1,
+   "debug": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": 1,
+   "hints": "true",
+   "copy_fallback": true,
+   "hotkey_mark": "",
+   "debug": 1,
+   "bar_color": "#00FF00"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 1,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": [
+    1,
+    2
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "#12345G",
+   "label_color": 5,
+   "hints": "true",
+   "hotkey_mark": "Win+Shift+B"
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "",
+   "debug": false,
+   "hotkey_mark": "Win+Shift+B",
+   "color": "#00ff00",
+   "hints": false,
+   "max_bookmarks": 10.0
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#00ff00",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": "red"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 0.35
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": null,
+   "max_age_days": 0,
+   "hotkey_mark": 5,
+   "ocr": true,
+   "debug": true,
+   "label_color": "#ABCDEF",
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "copy_fallback": false,
+   "unknown": 1,
+   "opacity": 0.35,
+   "max_bookmarks": true,
+   "hints": 1,
+   "bar_color": "orange"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#ABCDEF",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "debug": false,
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "copy_fallback": true,
+   "hotkey_mark": 5,
+   "ocr": true,
+   "hints": false,
+   "opacity": 1,
+   "unknown": "x",
+   "max_bookmarks": 5000,
+   "max_age_days": 7.0,
+   "color": "red",
+   "bar_color": "#34C759",
+   "label_color": "#abcdef"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 5000,
+   "label_color": "#abcdef",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Shift+A",
+   "max_bookmarks": 300,
+   "copy_fallback": "no",
+   "opacity": 0.9
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.9,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": -1,
+   "color": "#fff",
+   "hotkey_mark": "Win+Shift+B",
+   "copy_fallback": "no",
+   "unknown": [
+    1,
+    2
+   ],
+   "hints": 0
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "copy_fallback": false,
+   "color": null,
+   "max_age_days": 3650,
+   "hotkey_mark": "ctrl + alt + f5",
+   "ocr": true,
+   "label_color": 5
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 3650,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": true,
+   "copy_fallback": "no",
+   "color": "#FFD400",
+   "bar_color": "orange",
+   "opacity": 1,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "max_age_days": 30,
+   "ocr": false,
+   "hotkey_mark": "Win+Shift+B",
+   "hints": 1
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": [
+    1,
+    2
+   ],
+   "hotkey_extra": true,
+   "hints": 1,
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "max_bookmarks": 9,
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "ocr": true,
+   "max_age_days": 7.0,
+   "debug": null,
+   "bar_color": "#00FF00"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": 0,
+   "copy_fallback": "no",
+   "label_color": "red",
+   "hints": null,
+   "debug": false,
+   "hotkey_mark": null,
+   "ocr": 1,
+   "max_bookmarks": 10.0,
+   "bar_color": "#00FF00",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "unknown": "x",
+   "opacity": 2
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": [
+    "#00FF00"
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": 5,
+   "hotkey_extra": "Shift+A",
+   "unknown": "x",
+   "max_bookmarks": 10,
+   "copy_fallback": false,
+   "hints": 0,
+   "label_color": "auto",
+   "opacity": 0.1,
+   "max_age_days": 1,
+   "ocr": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.1,
+   "bar_color": "#FF7A00",
+   "max_age_days": 1,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "copy_fallback": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": null,
+   "label_color": "auto",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "hotkey_mark": 5,
+   "max_age_days": 3651,
+   "opacity": 0.35,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "debug": true,
+   "unknown": 1,
+   "copy_fallback": "no",
+   "color": "red",
+   "max_bookmarks": 1234
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "debug": null,
+   "label_color": "#ABCDEF",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "orange",
+   "unknown": [
+    1,
+    2
+   ],
+   "max_age_days": 0,
+   "hints": 0,
+   "copy_fallback": "no",
+   "max_bookmarks": 1234,
+   "ocr": false,
+   "hotkey_extra": true
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.35,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "#ABCDEF",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "copy_fallback": false,
+   "color": "red",
+   "max_bookmarks": 10.0,
+   "label_color": "AUTO",
+   "opacity": 2,
+   "hotkey_extra": "Ctrl+Win+Space",
+   "unknown": 1
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": true,
+   "copy_fallback": "no",
+   "debug": null,
+   "opacity": "0.5",
+   "max_age_days": 0,
+   "unknown": [
+    1,
+    2
+   ],
+   "color": null,
+   "label_color": 5,
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "hints": 1,
+   "max_bookmarks": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 0.05,
+   "label_color": "red"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": "7",
+   "max_bookmarks": true,
+   "opacity": 0.05,
+   "color": "red",
+   "ocr": 1,
+   "label_color": "red",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": [
+    1,
+    2
+   ],
+   "copy_fallback": true,
+   "color": "#FFD400",
+   "bar_color": "#34C759",
+   "max_age_days": 7,
+   "max_bookmarks": true,
+   "hints": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 7,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Win+Space",
+   "max_bookmarks": 10,
+   "unknown": [
+    1,
+    2
+   ],
+   "copy_fallback": "no",
+   "debug": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": false,
+   "ocr": true,
+   "opacity": 0.05
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": null,
+   "color": "#fff",
+   "max_age_days": 0,
+   "ocr": false,
+   "opacity": 1
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 0.0999,
+   "ocr": true,
+   "hotkey_mark": "ctrl + alt + f5",
+   "max_age_days": 7.0,
+   "label_color": "#fff",
+   "unknown": "x"
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "label_color": null,
+   "copy_fallback": true,
+   "max_age_days": 0,
+   "ocr": 1,
+   "bar_color": "",
+   "color": "#FFD400",
+   "max_bookmarks": 5001,
+   "unknown": [
+    1,
+    2
+   ]
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": [
+    1,
+    2
+   ],
+   "label_color": 5,
+   "max_bookmarks": true,
+   "color": "#ABCDEF",
+   "hints": true,
+   "debug": null,
+   "max_age_days": 0,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "ocr": 1,
+   "opacity": 0.9,
+   "hotkey_mark": "",
+   "bar_color": [
+    "#00FF00"
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#ABCDEF",
+   "opacity": 0.9,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "debug": null,
+   "bar_color": "orange",
+   "ocr": true,
+   "hotkey_extra": "Shift+A",
+   "color": "#12345G",
+   "unknown": 1,
+   "opacity": true,
+   "hints": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 0.1,
+   "max_bookmarks": 9,
+   "hotkey_extra": "Shift+A",
+   "debug": false,
+   "color": "#ABCDEF",
+   "bar_color": "orange",
+   "hints": null,
+   "copy_fallback": "no",
+   "label_color": "#abcdef",
+   "hotkey_mark": ""
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#ABCDEF",
+   "opacity": 0.1,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#abcdef",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "ocr": true,
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "max_age_days": 7.0,
+   "color": "#fff",
+   "opacity": "0.5",
+   "unknown": [
+    1,
+    2
+   ],
+   "max_bookmarks": 5000,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "copy_fallback": "no",
+   "label_color": "red",
+   "hints": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 5000,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "copy_fallback": true,
+   "max_age_days": "7",
+   "ocr": false,
+   "hotkey_extra": "Ctrl+Win+Space",
+   "hints": 1,
+   "debug": 1,
+   "bar_color": ""
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": "#fff",
+   "color": 7,
+   "hotkey_extra": true,
+   "opacity": true,
+   "max_age_days": true,
+   "copy_fallback": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 300,
+   "ocr": 1,
+   "color": "#FFD400",
+   "label_color": "#fff",
+   "opacity": true,
+   "hints": false,
+   "hotkey_extra": true,
+   "bar_color": "#34C759"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 1,
+   "max_age_days": 3651,
+   "hints": 1,
+   "hotkey_mark": "Ctrl+C",
+   "color": "#FFD400",
+   "bar_color": "orange",
+   "ocr": true,
+   "debug": false,
+   "label_color": "#fff",
+   "max_bookmarks": 300,
+   "hotkey_extra": true,
+   "unknown": [
+    1,
+    2
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": "0.5"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "#fff",
+   "hotkey_mark": 5,
+   "label_color": "AUTO",
+   "hotkey_extra": "Shift+A",
+   "max_bookmarks": 5000,
+   "bar_color": "",
+   "copy_fallback": false
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 5000,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": [
+    1,
+    2
+   ],
+   "opacity": 1,
+   "hotkey_mark": "Ctrl+C",
+   "max_bookmarks": 10,
+   "hotkey_extra": "Ctrl+Alt+F25"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Win+Space",
+   "debug": true,
+   "ocr": true,
+   "max_bookmarks": 1234,
+   "hints": 1,
+   "opacity": 0.1,
+   "bar_color": "",
+   "color": "#00ff00",
+   "hotkey_mark": "Win+Shift+B",
+   "label_color": 5,
+   "copy_fallback": "no"
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#00ff00",
+   "opacity": 0.1,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "bar_color": "orange",
+   "hotkey_mark": 5,
+   "unknown": [
+    1,
+    2
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": [
+    "#00FF00"
+   ],
+   "max_bookmarks": 10,
+   "max_age_days": -1,
+   "hotkey_extra": "Shift+A",
+   "debug": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "opacity": 1,
+   "color": "#fff",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "max_age_days": 0,
+   "unknown": "x",
+   "ocr": 1,
+   "hints": "true",
+   "copy_fallback": true,
+   "hotkey_extra": "Ctrl+Win+Space"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "",
+   "copy_fallback": "no",
+   "ocr": 1,
+   "unknown": 1,
+   "max_age_days": 1,
+   "color": "red",
+   "hints": null,
+   "opacity": 0.05,
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "label_color": "#ABCDEF"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 1,
+   "max_bookmarks": 300,
+   "label_color": "#ABCDEF",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": 7.0,
+   "label_color": "auto",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "ocr": 1,
+   "hints": true,
+   "debug": false,
+   "opacity": "0.5",
+   "color": "red",
+   "bar_color": "orange",
+   "copy_fallback": true,
+   "unknown": 1,
+   "max_bookmarks": 10.0
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "#34C759",
+   "hotkey_extra": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "Alt+F4",
+   "max_bookmarks": 1234,
+   "hints": true,
+   "color": "#12345G",
+   "unknown": 1,
+   "ocr": 1,
+   "bar_color": "#34C759",
+   "debug": false,
+   "opacity": "0.5",
+   "max_age_days": 3651,
+   "label_color": 5,
+   "hotkey_extra": true,
+   "copy_fallback": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": "#abcdef",
+   "hints": 0,
+   "max_age_days": 7.0,
+   "unknown": 1,
+   "bar_color": "#34C759",
+   "debug": null,
+   "ocr": true,
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "copy_fallback": false,
+   "opacity": 0.5,
+   "color": "#fff"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.5,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#abcdef",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "red",
+   "copy_fallback": "no"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 1,
+   "hotkey_extra": "Ctrl+Win+Space"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "debug": false,
+   "hints": "true",
+   "bar_color": "#34C759",
+   "max_bookmarks": 10.0,
+   "ocr": 1,
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "color": null,
+   "copy_fallback": true,
+   "max_age_days": 1,
+   "label_color": 5,
+   "opacity": 0.5,
+   "hotkey_mark": "Win+Shift+B",
+   "unknown": 1
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.5,
+   "bar_color": "#34C759",
+   "max_age_days": 1,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 10.0,
+   "debug": null,
+   "hotkey_mark": "Alt+F4",
+   "unknown": [
+    1,
+    2
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "#34C759",
+   "copy_fallback": "no",
+   "color": "#00ff00",
+   "ocr": false,
+   "hotkey_mark": "Win+Shift+B",
+   "unknown": [
+    1,
+    2
+   ],
+   "hints": 1,
+   "opacity": 0.1,
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "max_bookmarks": 1234,
+   "label_color": "#ABCDEF",
+   "debug": false,
+   "max_age_days": 3650
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#00ff00",
+   "opacity": 0.1,
+   "bar_color": "#34C759",
+   "max_age_days": 3650,
+   "max_bookmarks": 1234,
+   "label_color": "#ABCDEF",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "max_bookmarks": 300,
+   "ocr": true,
+   "hints": "true",
+   "debug": 1
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 1,
+   "bar_color": [
+    "#00FF00"
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "debug": false,
+   "hotkey_extra": "Ctrl+Win+Space",
+   "unknown": "x",
+   "hints": 1,
+   "opacity": 0.9
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.9,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "ocr": 1,
+   "max_bookmarks": 1234,
+   "bar_color": "orange",
+   "hotkey_extra": "Shift+A",
+   "color": "#12345G",
+   "max_age_days": 30,
+   "copy_fallback": "no",
+   "hotkey_mark": "Alt+F4",
+   "unknown": 1,
+   "debug": false,
+   "opacity": 0.1,
+   "label_color": 5,
+   "hints": 0
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.1,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "debug": true,
+   "opacity": 0.1,
+   "color": "red",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#FFD400",
+   "opacity": 0.1,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "debug": 1,
+   "hotkey_extra": "Shift+A",
+   "color": "#12345G",
+   "max_bookmarks": 10.0,
+   "opacity": 0.0999
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "debug": 1,
+   "ocr": false,
+   "bar_color": "#34C759",
+   "copy_fallback": true,
+   "label_color": 5,
+   "unknown": 1,
+   "hints": false,
+   "hotkey_mark": null,
+   "color": "#ABCDEF",
+   "max_age_days": "7"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#ABCDEF",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": "true",
+   "debug": null,
+   "hotkey_mark": "Alt+F4",
+   "label_color": "auto",
+   "opacity": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "ocr": true,
+   "copy_fallback": "no",
+   "max_age_days": 7.0,
+   "color": "#fff",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "unknown": 1,
+   "label_color": "#ABCDEF",
+   "hotkey_extra": true,
+   "debug": true,
+   "hotkey_mark": null
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "#ABCDEF",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "max_age_days": 3650,
+   "color": "#ABCDEF",
+   "label_color": "#fff"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#ABCDEF",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 3650,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": null,
+   "hotkey_extra": "Ctrl+Alt+F25"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "#34C759",
+   "opacity": 0.1,
+   "label_color": null,
+   "hints": "true",
+   "debug": 1,
+   "hotkey_mark": "Win+Shift+B",
+   "ocr": true
+  },
+  {
+   "hotkey_mark": "Win+Shift+B",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.1,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_mark": "Ctrl+C",
+   "copy_fallback": "no"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "bar_color": "",
+   "max_bookmarks": 1234,
+   "opacity": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "debug": false,
+   "copy_fallback": false,
+   "unknown": [
+    1,
+    2
+   ],
+   "color": "#ABCDEF",
+   "hotkey_extra": true,
+   "opacity": 0.05,
+   "ocr": true,
+   "bar_color": [
+    "#00FF00"
+   ],
+   "max_age_days": 3650,
+   "max_bookmarks": 5000,
+   "hints": true
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#ABCDEF",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 3650,
+   "max_bookmarks": 5000,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": false,
+   "hotkey_mark": 5,
+   "label_color": 5,
+   "opacity": 0.05
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "opacity": 1,
+   "ocr": 1,
+   "max_bookmarks": 300,
+   "color": "red",
+   "hotkey_mark": "Ctrl+Alt+Ж"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "opacity": 2
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": null,
+   "max_bookmarks": 5001,
+   "copy_fallback": true,
+   "max_age_days": "7",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "debug": true,
+   "hints": "true",
+   "ocr": false,
+   "color": "#12345G",
+   "opacity": true,
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "hotkey_extra": "Ctrl+Alt+F25"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 10,
+   "label_color": null,
+   "hints": null,
+   "hotkey_mark": "ctrl + alt + f5",
+   "bar_color": [
+    "#00FF00"
+   ]
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 10,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_age_days": 3651,
+   "label_color": "red",
+   "hints": 1,
+   "opacity": null,
+   "debug": null,
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "ocr": false,
+   "hotkey_mark": "",
+   "max_bookmarks": 9,
+   "copy_fallback": false,
+   "bar_color": "#34C759",
+   "unknown": 1
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#34C759",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "unknown": "x",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "ocr": false,
+   "bar_color": "#00FF00",
+   "label_color": "red",
+   "color": "red",
+   "max_bookmarks": 5001,
+   "max_age_days": 1,
+   "hotkey_mark": "ctrl + alt + f5",
+   "hints": 1,
+   "debug": true
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 1,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": true,
+   "debug": true
+  }
+ ],
+ [
+  {
+   "debug": null,
+   "opacity": "0.5",
+   "hints": false,
+   "label_color": null,
+   "max_bookmarks": 5000,
+   "color": "#fff",
+   "copy_fallback": false,
+   "bar_color": "",
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "max_age_days": 7.0,
+   "unknown": 1,
+   "ocr": 1,
+   "hotkey_extra": "Ctrl+Alt+F25"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 5000,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "hotkey_mark": "Ctrl+C",
+   "color": "#12345G",
+   "hints": false,
+   "max_age_days": 1,
+   "opacity": "0.5",
+   "label_color": "auto"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 1,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "label_color": "#fff",
+   "hotkey_mark": 5,
+   "copy_fallback": false,
+   "max_bookmarks": 1234,
+   "debug": false,
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "ocr": false,
+   "opacity": "0.5",
+   "max_age_days": -1,
+   "color": "#ABCDEF",
+   "bar_color": [
+    "#00FF00"
+   ],
+   "unknown": [
+    1,
+    2
+   ]
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Alt+Shift+Q",
+   "color": "#ABCDEF",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 1234,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": false,
+   "copy_fallback": false,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "max_bookmarks": 5001,
+   "bar_color": "",
+   "ocr": 1,
+   "copy_fallback": true,
+   "debug": 1,
+   "color": "#fff",
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+F25",
+   "max_age_days": true
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "hints": 0,
+   "max_age_days": -1,
+   "hotkey_mark": "ctrl + alt + f5"
+  },
+  {
+   "hotkey_mark": "ctrl + alt + f5",
+   "hotkey_extra": "Ctrl+Alt+Shift+Z",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#FF7A00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": true,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ],
+ [
+  {
+   "color": "red",
+   "bar_color": "#00FF00",
+   "hotkey_mark": "Ctrl+Alt+Ж",
+   "opacity": true,
+   "unknown": "x",
+   "hints": false,
+   "max_age_days": -1,
+   "debug": false,
+   "label_color": 5,
+   "hotkey_extra": "Ctrl+Win+Space",
+   "ocr": 1,
+   "copy_fallback": "no"
+  },
+  {
+   "hotkey_mark": "Ctrl+Alt+Z",
+   "hotkey_extra": "Ctrl+Win+Space",
+   "color": "#FFD400",
+   "opacity": 0.3,
+   "bar_color": "#00FF00",
+   "max_age_days": 30,
+   "max_bookmarks": 300,
+   "label_color": "auto",
+   "hints": false,
+   "ocr": true,
+   "copy_fallback": true,
+   "debug": false
+  }
+ ]
+]

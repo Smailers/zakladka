@@ -1,0 +1,62 @@
+[
+ {
+  "id": "ok",
+  "exe": "claude.exe",
+  "kind": "pos",
+  "quote": "цитата",
+  "prefix": "",
+  "suffix": "",
+  "label": "Цитата",
+  "title": "",
+  "created": "2026-11-19T10:00:00",
+  "mode": "uia",
+  "page": "",
+  "doc": "",
+  "url": ""
+ },
+ {
+  "id": "m",
+  "exe": "claude.exe",
+  "kind": "pos",
+  "quote": "цитата",
+  "prefix": "",
+  "suffix": "",
+  "label": "Цитата",
+  "title": "",
+  "created": "2026-11-19T10:00:00",
+  "mode": "ocr",
+  "page": "",
+  "doc": "",
+  "url": ""
+ },
+ {
+  "id": "opt",
+  "exe": "claude.exe",
+  "kind": "pos",
+  "quote": "цитата",
+  "prefix": "",
+  "suffix": "",
+  "label": "Цитата",
+  "title": "",
+  "created": "2026-11-19T10:00:00",
+  "mode": "uia",
+  "page": "",
+  "doc": "",
+  "url": "https://a/b"
+ },
+ {
+  "id": "late",
+  "exe": "claude.exe",
+  "kind": "pos",
+  "quote": "цитата",
+  "prefix": "",
+  "suffix": "",
+  "label": "Цитата",
+  "title": "",
+  "created": "2026-11-21T00:00:00",
+  "mode": "uia",
+  "page": "",
+  "doc": "",
+  "url": ""
+ }
+]

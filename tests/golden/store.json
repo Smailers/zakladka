@@ -1,0 +1,114 @@
+{
+ "default_config_text": "{\r\n  \"hotkey_mark\": \"Ctrl+Alt+Z\",\r\n  \"hotkey_extra\": \"Ctrl+Alt+Shift+Z\",\r\n  \"color\": \"#FFD400\",\r\n  \"opacity\": 0.3,\r\n  \"bar_color\": \"#FF7A00\",\r\n  \"max_age_days\": 30,\r\n  \"max_bookmarks\": 300,\r\n  \"label_color\": \"auto\",\r\n  \"hints\": true,\r\n  \"ocr\": true,\r\n  \"copy_fallback\": true,\r\n  \"debug\": false\r\n}\r\n",
+ "save_config": [
+  [
+   [
+    null,
+    "{\r\n  \"color\": \"#ABCDEF\",\r\n  \"opacity\": 0.35,\r\n  \"label_color\": \"auto\",\r\n  \"hotkey_mark\": \"Ctrl+Alt+Q\",\r\n  \"new\": [\r\n    true\r\n  ]\r\n}\r\n"
+   ],
+   [
+    "{broken",
+    "{\r\n  \"color\": \"#ABCDEF\",\r\n  \"opacity\": 0.35,\r\n  \"label_color\": \"auto\",\r\n  \"hotkey_mark\": \"Ctrl+Alt+Q\",\r\n  \"new\": [\r\n    true\r\n  ]\r\n}\r\n"
+   ],
+   [
+    "[1, 2]",
+    "{\r\n  \"color\": \"#ABCDEF\",\r\n  \"opacity\": 0.35,\r\n  \"label_color\": \"auto\",\r\n  \"hotkey_mark\": \"Ctrl+Alt+Q\",\r\n  \"new\": [\r\n    true\r\n  ]\r\n}\r\n"
+   ],
+   [
+    "﻿{\"z_unknown\": [1, {\"a\": null}], \"color\": \"#000000\", \"ж\": \"т\\n\", \"n\": 1e-05}",
+    "{\r\n  \"z_unknown\": [\r\n    1,\r\n    {\r\n      \"a\": null\r\n    }\r\n  ],\r\n  \"color\": \"#ABCDEF\",\r\n  \"ж\": \"т\\n\",\r\n  \"n\": 1e-05,\r\n  \"opacity\": 0.35,\r\n  \"label_color\": \"auto\",\r\n  \"hotkey_mark\": \"Ctrl+Alt+Q\",\r\n  \"new\": [\r\n    true\r\n  ]\r\n}\r\n"
+   ],
+   [
+    "{\"hotkey_mark\": \"Ctrl+Alt+Z\", \"later\": {}, \"debug\": true, \"opacity\": 0.3, \"big\": 12345678901234, \"f\": 1e+16, \"g\": 123.0, \"neg\": -0.5, \"empty\": [], \"e\": \"\\u0001\\\"\\\\\"}",
+    "{\r\n  \"hotkey_mark\": \"Ctrl+Alt+Q\",\r\n  \"later\": {},\r\n  \"debug\": true,\r\n  \"opacity\": 0.35,\r\n  \"big\": 12345678901234,\r\n  \"f\": 1e+16,\r\n  \"g\": 123.0,\r\n  \"neg\": -0.5,\r\n  \"empty\": [],\r\n  \"e\": \"\\u0001\\\"\\\\\",\r\n  \"color\": \"#ABCDEF\",\r\n  \"label_color\": \"auto\",\r\n  \"new\": [\r\n    true\r\n  ]\r\n}\r\n"
+   ]
+  ],
+  {
+   "color": "#ABCDEF",
+   "opacity": 0.35,
+   "label_color": "auto",
+   "hotkey_mark": "Ctrl+Alt+Q",
+   "new": [
+    true
+   ]
+  }
+ ],
+ "render": [
+  [
+   [],
+   [],
+   null,
+   "{\"time\": \"2026-11-20T10:00:00.123\", \"marks\": [], \"pills\": [], \"viewport\": null}"
+  ],
+  [
+   [
+    [
+     "0123456789abcdef",
+     [
+      [
+       1,
+       2,
+       3,
+       4
+      ],
+      [
+       -5,
+       -6,
+       7,
+       8
+      ]
+     ]
+    ],
+    [
+     "short",
+     []
+    ]
+   ],
+   [
+    [
+     "up",
+     "abcdef0123456789"
+    ]
+   ],
+   [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "{\"time\": \"2026-11-20T10:00:00.123\", \"marks\": [[\"01234567\", [[1, 2, 3, 4], [-5, -6, 7, 8]]], [\"short\", []]], \"pills\": [[\"up\", \"abcdef01\"]], \"viewport\": [0, 0, 1920, 1080]}"
+  ],
+  [
+   [
+    [
+     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     [
+      [
+       10,
+       20,
+       30,
+       40
+      ]
+     ]
+    ]
+   ],
+   [
+    [
+     "down",
+     "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    ],
+    [
+     "up",
+     "c"
+    ]
+   ],
+   [
+    -1920,
+    -100,
+    0,
+    980
+   ],
+   "{\"time\": \"2026-11-20T10:00:00.123\", \"marks\": [[\"aaaaaaaa\", [[10, 20, 30, 40]]]], \"pills\": [[\"down\", \"bbbbbbbb\"], [\"up\", \"c\"]], \"viewport\": [-1920, -100, 0, 980]}"
+  ]
+ ]
+}

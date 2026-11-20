@@ -1,0 +1,50 @@
+{
+ "version": 1,
+ "bookmarks": [
+  {
+   "id": "0123456789abcdef0123456789abcdef",
+   "exe": "claude.exe",
+   "kind": "pos",
+   "quote": "цитата\"с\\кавычками/и разрывом",
+   "prefix": "пре\u0001фикс",
+   "suffix": "хвост\n\t\r\b\f",
+   "label": "Подпись 👍🏻 & <тег>",
+   "title": "Чат — Claude",
+   "created": "2026-11-19T22:40:07",
+   "mode": "uia",
+   "page": "https://claude.ai/chat/1",
+   "doc": "Чат",
+   "url": "https://claude.ai/chat/1#x"
+  },
+  {
+   "id": "fedcba9876543210fedcba9876543210",
+   "exe": "editors.exe",
+   "kind": "extra",
+   "quote": "ß İ ﬁ 漢字   ‍ 👨‍👩‍👧",
+   "prefix": "",
+   "suffix": "",
+   "label": "",
+   "title": "Инвойс.docx",
+   "created": "2026-11-01T00:00:00",
+   "mode": "ocr",
+   "page": "",
+   "doc": "",
+   "url": ""
+  },
+  {
+   "id": "00000000000000000000000000000001",
+   "exe": "chrome.exe",
+   "kind": "pos",
+   "quote": "q",
+   "prefix": "p",
+   "suffix": "s",
+   "label": "l",
+   "title": "t",
+   "created": "2026-11-19T10:00:00",
+   "mode": "uia",
+   "page": "инвойс.docx",
+   "doc": "Doc",
+   "url": "file:///C:/a.html"
+  }
+ ]
+}

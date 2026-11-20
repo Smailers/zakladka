@@ -1,0 +1,47 @@
+[package]
+name = "zakladka"
+version = "2.0.0"
+edition = "2021"
+license = "MIT"
+
+# Библиотека нужна, чтобы тесты tests\*.rs (раздел 6 плана) видели модули программы.
+[lib]
+name = "zakladka"
+path = "src/lib.rs"
+
+[[bin]]
+name = "Zakladka"
+path = "src/main.rs"
+
+[dependencies]
+unicode-normalization = "0.1"
+caseless = "0.2"
+serde_json = { version = "1", features = ["preserve_order"] }
+
+# Только для build.rs: картинка значка 256 × 256 хранится в exe в формате PNG.
+[build-dependencies]
+png = "0.17"
+
+[dependencies.windows]
+version = "=0.58.0"
+features = [
+  "Win32_Foundation", "Win32_Graphics_Gdi", "Win32_Graphics_Dwm",
+  "Win32_System_Com", "Win32_System_Ole", "Win32_System_Variant",
+  "Win32_System_Threading", "Win32_System_Memory", "Win32_System_DataExchange",
+  "Win32_System_LibraryLoader", "Win32_System_SystemInformation", "Win32_System_Registry",
+  "Win32_System_ProcessStatus", "Win32_Security",
+  "Win32_UI_Accessibility", "Win32_UI_WindowsAndMessaging", "Win32_UI_Shell",
+  "Win32_UI_HiDpi", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_Controls_Dialogs",
+  "Foundation", "Foundation_Collections", "Globalization", "Graphics_Imaging",
+  "Media_Ocr", "Storage_Streams",
+  # добавлено в каркасе: QueryPerformanceCounter (win::monotonic), BCryptGenRandom (store::new_id),
+  # FlushFileBuffers / MoveFileExW (store: tmp + replace)
+  "Win32_System_Performance", "Win32_Security_Cryptography", "Win32_Storage_FileSystem",
+]
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "unwind"      # паника в одном тике не роняет программу (раздел 5.7)
+strip = true
