@@ -1,5 +1,5 @@
 # Developer helper: list visible top-level windows of the --dev copy (class, rectangle, title length only).
-param([switch]$Prod)  # -Prod: the working copy started by switch.ps1 (native.pid)
+param([switch]$Prod)  # -Prod: the working copy started by update-install.ps1 -Exe (native.pid)
 $data = Join-Path $env:LOCALAPPDATA $(if ($Prod) { 'text-bookmark' } else { 'text-bookmark-native' })
 $target = [int](Get-Content -LiteralPath (Join-Path $data $(if ($Prod) { 'native.pid' } else { 'dev.pid' })) -TotalCount 1)
 Add-Type -TypeDefinition @'
